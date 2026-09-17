@@ -6,7 +6,7 @@ Sitio web corporativo de **NODAL IT**, una red de especialistas orientada a cone
 
 ## Sitio
 
-Producción: [https://www.nodal-it.cl](https://www.nodal-it.cl)
+Producción: [https://nodal-it.cl](https://nodal-it.cl)
 
 ## Stack
 
@@ -15,7 +15,7 @@ Producción: [https://www.nodal-it.cl](https://www.nodal-it.cl)
 - CSS nativo
 - JavaScript mínimo
 - Sitio estático (`output: static`)
-- Despliegue en Cloudflare Workers desde la rama `main`
+- Despliegue en Cloudflare Pages desde la rama `main`
 
 ## Desarrollo local
 
@@ -57,7 +57,6 @@ npm run preview
 │   │   └── index.astro
 │   └── styles/
 ├── astro.config.mjs
-├── wrangler.jsonc
 └── package.json
 ```
 
@@ -102,11 +101,16 @@ Los cambios se integran mediante pull request hacia `development`. Las versiones
 
 ## Despliegue
 
-Cloudflare está configurado para construir y desplegar producción desde `main`.
+Cloudflare Pages está configurado para construir y publicar producción desde `main`.
 
-- Build: `npm run build`
-- Deploy: `npx wrangler deploy`
-- Assets estáticos: `./dist`
+- Framework preset: `Astro`
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: raíz del repositorio
+- Dominio principal: `https://nodal-it.cl`
+- Dominio alternativo: `https://www.nodal-it.cl`
+
+No se requieren variables de entorno para la landing actual.
 
 ## Seguridad y repositorio público
 
