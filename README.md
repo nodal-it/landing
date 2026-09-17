@@ -15,7 +15,7 @@ Producción: [https://www.nodal-it.cl](https://www.nodal-it.cl)
 - CSS nativo
 - JavaScript mínimo
 - Sitio estático (`output: static`)
-- Despliegue previsto en Cloudflare Pages
+- Despliegue en Cloudflare Workers desde la rama `main`
 
 ## Desarrollo local
 
@@ -57,6 +57,7 @@ npm run preview
 │   │   └── index.astro
 │   └── styles/
 ├── astro.config.mjs
+├── wrangler.jsonc
 └── package.json
 ```
 
@@ -98,6 +99,14 @@ La landing incluye:
 - `fix/*`: correcciones
 
 Los cambios se integran mediante pull request hacia `development`. Las versiones listas para producción se promueven posteriormente a `main`.
+
+## Despliegue
+
+Cloudflare está configurado para construir y desplegar producción desde `main`.
+
+- Build: `npm run build`
+- Deploy: `npx wrangler deploy`
+- Assets estáticos: `./dist`
 
 ## Seguridad y repositorio público
 
