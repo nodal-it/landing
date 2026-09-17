@@ -44,8 +44,10 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <section class="capabilities" id="servicios" aria-labelledby="capabilities-title">
-        <div class="shell capabilities-content">
+      <section class="capabilities visual-section" id="servicios" aria-labelledby="capabilities-title">
+        <div class="visual-overlay capabilities-overlay" aria-hidden="true"></div>
+
+        <div class="shell visual-content capabilities-content">
           <header class="capabilities-heading">
             <p class="eyebrow">CAPACIDADES</p>
             <h2 id="capabilities-title">Cuatro capacidades. Una visión integrada.</h2>
@@ -64,9 +66,9 @@ import '../styles/global.css';
                   <circle cx="41" cy="45" r="1.6" class="icon-fill"></circle>
                 </svg>
               </div>
-              <p class="capability-kicker">01 · SERVIDOR</p>
+              <p class="capability-kicker">INFRAESTRUCTURA</p>
               <h3>Infraestructura y continuidad</h3>
-              <p>La base que mantiene la operación disponible y protegida.</p>
+              <p>La operación necesita una base confiable.</p>
               <ul>
                 <li>Redes y conectividad</li>
                 <li>Cloud e infraestructura híbrida</li>
@@ -83,9 +85,9 @@ import '../styles/global.css';
                   <path d="m36 14-8 36"></path>
                 </svg>
               </div>
-              <p class="capability-kicker">02 · CÓDIGO</p>
+              <p class="capability-kicker">SOFTWARE</p>
               <h3>Software y automatización</h3>
-              <p>Procesos conectados, automatizados y medibles.</p>
+              <p>Menos tareas manuales. Más control.</p>
               <ul>
                 <li>Aplicaciones web y portales</li>
                 <li>Plataformas SaaS y multicliente</li>
@@ -103,9 +105,9 @@ import '../styles/global.css';
                   <path d="M45 48V14"></path>
                 </svg>
               </div>
-              <p class="capability-kicker">03 · ANALÍTICA</p>
+              <p class="capability-kicker">DATOS</p>
               <h3>Datos y digital</h3>
-              <p>Información útil para decidir y canales que generan oportunidades.</p>
+              <p>Información que ayuda a decidir y canales que generan oportunidades.</p>
               <ul>
                 <li>Dashboards, KPIs y alertas</li>
                 <li>Consolidación de fuentes</li>
@@ -120,9 +122,9 @@ import '../styles/global.css';
                   <path d="M32 11 47 17v12c0 11-5.8 19.2-15 24-9.2-4.8-15-13-15-24V17l15-6Z"></path>
                 </svg>
               </div>
-              <p class="capability-kicker">04 · ESCUDO</p>
+              <p class="capability-kicker">GOBIERNO TI</p>
               <h3>Gobierno, riesgo y cumplimiento TI</h3>
-              <p>Control, continuidad y cumplimiento que reducen riesgo.</p>
+              <p>Tecnología bajo control.</p>
               <ul>
                 <li>Auditoría y evaluación de riesgos</li>
                 <li>Controles generales de TI</li>
@@ -134,9 +136,52 @@ import '../styles/global.css';
         </div>
       </section>
 
+      <section class="method visual-section" id="metodo" aria-labelledby="method-title">
+        <div class="visual-media method-media" aria-hidden="true"></div>
+        <div class="visual-overlay method-overlay" aria-hidden="true"></div>
+        <div class="shell visual-content method-content">
+          <header class="method-heading">
+            <p class="eyebrow">CÓMO TRABAJAMOS</p>
+            <h2 id="method-title">Un equipo para cada misión.</h2>
+            <p>Entendemos el contexto, diseñamos un alcance claro, implementamos por etapas y acompañamos la evolución cuando el negocio lo necesita.</p>
+          </header>
+
+          <div class="method-steps" role="list">
+            <article class="method-step" role="listitem">
+              <span class="method-number">01</span>
+              <div>
+                <h3>Entendemos</h3>
+                <p>Situación actual, necesidades, restricciones y objetivo de negocio.</p>
+              </div>
+            </article>
+            <article class="method-step" role="listitem">
+              <span class="method-number">02</span>
+              <div>
+                <h3>Diseñamos</h3>
+                <p>Solución, alcance, etapas y presupuesto con responsables definidos.</p>
+              </div>
+            </article>
+            <article class="method-step" role="listitem">
+              <span class="method-number">03</span>
+              <div>
+                <h3>Implementamos</h3>
+                <p>Infraestructura, software, datos e integraciones con ejecución directa.</p>
+              </div>
+            </article>
+            <article class="method-step" role="listitem">
+              <span class="method-number">04</span>
+              <div>
+                <h3>Acompañamos</h3>
+                <p>Soporte, mejoras y evolución después de la entrega.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="checkpoint" aria-label="Checkpoint de diseño">
         <div class="shell">
-          <p>Checkpoint visual v2 — Hero + Capacidades.</p>
+          <p>Checkpoint visual v2 — Hero + Capacidades + Cómo trabajamos.</p>
         </div>
       </section>
     </main>
