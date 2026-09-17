@@ -47,68 +47,91 @@ import '../styles/global.css';
       <section class="capabilities visual-section" id="servicios" aria-labelledby="capabilities-title">
         <div class="visual-media capabilities-media" aria-hidden="true"></div>
         <div class="visual-overlay capabilities-overlay" aria-hidden="true"></div>
+
         <div class="shell visual-content capabilities-content">
-          <div class="capabilities-intro">
+          <header class="capabilities-heading">
             <p class="eyebrow">CAPACIDADES</p>
-            <h2 id="capabilities-title">Cuatro capacidades.<br />Una visión integrada.</h2>
+            <h2 id="capabilities-title">Cuatro capacidades. Una visión integrada.</h2>
             <p>Conectamos infraestructura, sistemas, datos y gobierno TI para resolver problemas concretos de negocio.</p>
-          </div>
+          </header>
 
-          <div class="capability-list" role="list">
-            <article class="capability-item infra" role="listitem">
-              <div class="capability-number">01</div>
-              <div class="capability-body">
-                <h3>Infraestructura y continuidad</h3>
-                <p>La base que mantiene la operación disponible y protegida.</p>
-                <ul>
-                  <li>Redes y conectividad</li>
-                  <li>Cloud e infraestructura híbrida</li>
-                  <li>Servidores, virtualización y almacenamiento</li>
-                  <li>Backup, recuperación y monitoreo</li>
-                </ul>
+          <div class="capability-pillars" role="list">
+            <article class="capability-pillar infra" role="listitem">
+              <div class="capability-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img">
+                  <rect x="17" y="14" width="30" height="10" rx="2"></rect>
+                  <rect x="17" y="27" width="30" height="10" rx="2"></rect>
+                  <rect x="17" y="40" width="30" height="10" rx="2"></rect>
+                  <circle cx="41" cy="19" r="1.6" class="icon-fill"></circle>
+                  <circle cx="41" cy="32" r="1.6" class="icon-fill"></circle>
+                  <circle cx="41" cy="45" r="1.6" class="icon-fill"></circle>
+                </svg>
               </div>
+              <p class="capability-kicker">01 · SERVIDOR</p>
+              <h3>Infraestructura y continuidad</h3>
+              <p>La base que mantiene la operación disponible y protegida.</p>
+              <ul>
+                <li>Redes y conectividad</li>
+                <li>Cloud e infraestructura híbrida</li>
+                <li>Servidores y virtualización</li>
+                <li>Backup, recuperación y monitoreo</li>
+              </ul>
             </article>
 
-            <article class="capability-item software" role="listitem">
-              <div class="capability-number">02</div>
-              <div class="capability-body">
-                <h3>Software y automatización</h3>
-                <p>Procesos conectados, automatizados y medibles.</p>
-                <ul>
-                  <li>Aplicaciones web y portales</li>
-                  <li>Plataformas SaaS y multicliente</li>
-                  <li>Flujos e integraciones</li>
-                  <li>Usuarios, roles, notificaciones y pagos</li>
-                </ul>
+            <article class="capability-pillar software" role="listitem">
+              <div class="capability-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img">
+                  <path d="M24 19 12 32l12 13"></path>
+                  <path d="M40 19 52 32 40 45"></path>
+                  <path d="m36 14-8 36"></path>
+                </svg>
               </div>
+              <p class="capability-kicker">02 · CÓDIGO</p>
+              <h3>Software y automatización</h3>
+              <p>Procesos conectados, automatizados y medibles.</p>
+              <ul>
+                <li>Aplicaciones web y portales</li>
+                <li>Plataformas SaaS y multicliente</li>
+                <li>Flujos e integraciones</li>
+                <li>Usuarios, roles, notificaciones y pagos</li>
+              </ul>
             </article>
 
-            <article class="capability-item data" role="listitem">
-              <div class="capability-number">03</div>
-              <div class="capability-body">
-                <h3>Datos y digital</h3>
-                <p>Información útil para decidir y canales que generan oportunidades.</p>
-                <ul>
-                  <li>Dashboards, KPIs y alertas</li>
-                  <li>Consolidación de fuentes</li>
-                  <li>Mapas y georreferenciación</li>
-                  <li>SEO, analítica y conversión</li>
-                </ul>
+            <article class="capability-pillar data" role="listitem">
+              <div class="capability-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img">
+                  <path d="M15 48V38"></path>
+                  <path d="M25 48V30"></path>
+                  <path d="M35 48V22"></path>
+                  <path d="M45 48V14"></path>
+                </svg>
               </div>
+              <p class="capability-kicker">03 · ANALÍTICA</p>
+              <h3>Datos y digital</h3>
+              <p>Información útil para decidir y canales que generan oportunidades.</p>
+              <ul>
+                <li>Dashboards, KPIs y alertas</li>
+                <li>Consolidación de fuentes</li>
+                <li>Mapas y georreferenciación</li>
+                <li>SEO, analítica y conversión</li>
+              </ul>
             </article>
 
-            <article class="capability-item governance" role="listitem">
-              <div class="capability-number">04</div>
-              <div class="capability-body">
-                <h3>Gobierno, riesgo y cumplimiento TI</h3>
-                <p>Control, continuidad y cumplimiento que reducen riesgo.</p>
-                <ul>
-                  <li>Auditoría y evaluación de riesgos</li>
-                  <li>Controles generales de TI</li>
-                  <li>Seguridad y continuidad</li>
-                  <li>Proveedores, contratos y SLA</li>
-                </ul>
+            <article class="capability-pillar governance" role="listitem">
+              <div class="capability-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img">
+                  <path d="M32 11 47 17v12c0 11-5.8 19.2-15 24-9.2-4.8-15-13-15-24V17l15-6Z"></path>
+                </svg>
               </div>
+              <p class="capability-kicker">04 · ESCUDO</p>
+              <h3>Gobierno, riesgo y cumplimiento TI</h3>
+              <p>Control, continuidad y cumplimiento que reducen riesgo.</p>
+              <ul>
+                <li>Auditoría y evaluación de riesgos</li>
+                <li>Controles generales de TI</li>
+                <li>Seguridad y continuidad</li>
+                <li>Proveedores, contratos y SLA</li>
+              </ul>
             </article>
           </div>
         </div>
