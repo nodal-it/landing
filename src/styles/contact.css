@@ -1,0 +1,180 @@
+.contact {
+  min-height: 86svh;
+  display: flex;
+  align-items: center;
+  background: var(--navy);
+}
+
+.contact-media {
+  background-image: url('/assets/images/cta-contact.png');
+  background-position: 64% center;
+}
+
+.contact-overlay {
+  background:
+    linear-gradient(90deg,
+      rgba(6,24,46,.98) 0%,
+      rgba(6,24,46,.92) 30%,
+      rgba(6,24,46,.68) 48%,
+      rgba(6,24,46,.24) 72%,
+      rgba(6,24,46,.08) 100%),
+    linear-gradient(180deg, rgba(6,24,46,.08), rgba(6,24,46,.28));
+}
+
+.contact-content {
+  padding-block: clamp(6rem, 9vw, 9rem);
+}
+
+.contact-copy {
+  width: min(760px, 56vw);
+}
+
+.contact-copy h2 {
+  max-width: 10.5ch;
+  margin-bottom: 1.4rem;
+  font-size: clamp(3.8rem, 6.2vw, 7.1rem);
+  line-height: .93;
+  letter-spacing: -.055em;
+}
+
+.contact-copy > p:not(.eyebrow) {
+  max-width: 36rem;
+  margin-bottom: 0;
+  color: rgba(255,255,255,.80);
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  line-height: 1.6;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-mail {
+  color: rgba(255,255,255,.88);
+  text-decoration: none;
+  font-weight: 750;
+}
+
+.contact-mail:hover { color: var(--cyan); }
+
+.site-footer {
+  background: #031122;
+  color: rgba(255,255,255,.78);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr .8fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  padding-block: 3.5rem 2.6rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.footer-brand strong {
+  display: block;
+  color: var(--white);
+  font-size: 1rem;
+  letter-spacing: .02em;
+}
+
+.footer-brand span {
+  display: block;
+  margin-top: .2rem;
+  color: rgba(255,255,255,.50);
+  font-size: .68rem;
+  letter-spacing: .13em;
+}
+
+.footer-nav,
+.footer-contact {
+  display: grid;
+  gap: .65rem;
+}
+
+.footer-nav a,
+.footer-contact a,
+.footer-bottom a {
+  color: rgba(255,255,255,.72);
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover,
+.footer-bottom a:hover { color: var(--cyan); }
+
+.footer-bottom {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.45);
+  font-size: .78rem;
+}
+
+@media (max-width: 1100px) {
+  .contact-copy { width: min(760px, 68vw); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-contact { grid-column: 2; }
+}
+
+@media (max-width: 760px) {
+  .contact {
+    min-height: 80svh;
+    align-items: end;
+  }
+
+  .contact-media { background-position: 72% center; }
+
+  .contact-overlay {
+    background:
+      linear-gradient(180deg,
+        rgba(6,24,46,.10) 0%,
+        rgba(6,24,46,.40) 28%,
+        rgba(6,24,46,.87) 63%,
+        rgba(6,24,46,.99) 100%),
+      linear-gradient(90deg, rgba(6,24,46,.65), rgba(6,24,46,.08));
+  }
+
+  .contact-content { padding-block: 5rem 4.5rem; }
+  .contact-copy { width: 100%; }
+  .contact-copy h2 {
+    max-width: 9ch;
+    font-size: clamp(3.15rem, 13vw, 5rem);
+  }
+  .contact-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 2.8rem 2.2rem;
+  }
+  .footer-contact { grid-column: auto; }
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 1.2rem;
+  }
+}
